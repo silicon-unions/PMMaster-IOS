@@ -1,0 +1,108 @@
+PODS:
+  - Advance (2.0.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - AnimatedCollectionViewLayout (0.3.0)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FacebookCore (0.3.1):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.33)
+  - FacebookLogin (0.3.1):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.3.1)
+    - FBSDKCoreKit (~> 4.33)
+    - FBSDKLoginKit (~> 4.33)
+  - FBSDKCoreKit (4.33.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.33.0):
+    - FBSDKCoreKit
+  - Gloss (2.0.1)
+  - GTProgressBar (0.2.4)
+  - IOSLinkedInAPIFix (2.0.4):
+    - AFNetworking (>= 2.0.0)
+  - LinkedinSwift (1.7.7):
+    - AFNetworking (>= 3.1.0)
+    - IOSLinkedInAPIFix (>= 2.0.4)
+  - Realm (3.7.1):
+    - Realm/Headers (= 3.7.1)
+  - Realm/Headers (3.7.1)
+  - RealmSwift (3.7.1):
+    - Realm (= 3.7.1)
+  - RKPieChart (0.0.1)
+
+DEPENDENCIES:
+  - Advance
+  - Alamofire
+  - AlamofireImage
+  - AnimatedCollectionViewLayout
+  - FacebookCore
+  - FacebookLogin
+  - Gloss
+  - GTProgressBar
+  - LinkedinSwift (~> 1.7.7)
+  - RealmSwift
+  - RKPieChart
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Advance
+    - AFNetworking
+    - Alamofire
+    - AlamofireImage
+    - AnimatedCollectionViewLayout
+    - Bolts
+    - FacebookCore
+    - FacebookLogin
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - Gloss
+    - GTProgressBar
+    - IOSLinkedInAPIFix
+    - LinkedinSwift
+    - Realm
+    - RealmSwift
+    - RKPieChart
+
+SPEC CHECKSUMS:
+  Advance: 01fbd7940173c1ba2f48955f58eb7374d9e925c3
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  AnimatedCollectionViewLayout: 504b992a4258eb39d2dd2b2b48e84b4b95860fd7
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FacebookCore: 33078ef1d7d76b73f7e8c990dca7d3ea6db8d22f
+  FacebookLogin: 6f15bf4fefd7a8865abbfa8fcd7f3dfd87aa275f
+  FBSDKCoreKit: 572b047a7e029bc44542bcf8a59414e7ff2b543e
+  FBSDKLoginKit: 88cb456349cfb3b554427ce4f8b43729d85dfb40
+  Gloss: 1e8743f8de1fbe14a97f220ff901cba91ae5f8f8
+  GTProgressBar: 1d79e4a627e997263b612c7e6589126dfe5645b8
+  IOSLinkedInAPIFix: a520fd805a03dade35f42904c7d89ded2a84c752
+  LinkedinSwift: bab5724c2b18335233d02fa59a2cb3fbbccd9219
+  Realm: 906be37d52f17f25484ac01643a7f26a9d3bfbd5
+  RealmSwift: 1c2b6bae3dc55bb87e080ffa96537d71442f6dce
+  RKPieChart: 8e643c505d24e61574f3a2fd6bd807403840b24b
+
+PODFILE CHECKSUM: b48e5adeaac9ea25fbd7e2861b4cff3dbcf46ffa
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="PracticeMainTableViewCell" customModule="PMP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNt-2L-xwF">
+                        <rect key="frame" x="10" y="0.0" width="386" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eJU-HO-gRY">
+                                <rect key="frame" x="336" y="18.5" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="tLl-CS-dhq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58" id="AMu-vw-jgh"/>
+                            <constraint firstAttribute="trailing" secondItem="eJU-HO-gRY" secondAttribute="trailing" constant="8" id="Cdw-NU-XIC"/>
+                            <constraint firstItem="eJU-HO-gRY" firstAttribute="centerY" secondItem="zNt-2L-xwF" secondAttribute="centerY" id="D1f-Ip-KUc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gw9-hU-OCm">
+                        <rect key="frame" x="30" y="8" width="308" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeH-ln-lrh" customClass="GTProgressBar" customModule="GTProgressBar">
+                        <rect key="frame" x="30" y="31" width="275" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="0kP-wr-7Ao"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="zNt-2L-xwF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4xB-Cb-0tV"/>
+                    <constraint firstItem="BeH-ln-lrh" firstAttribute="leading" secondItem="Gw9-hU-OCm" secondAttribute="leading" id="AxV-tT-mcf"/>
+                    <constraint firstItem="eJU-HO-gRY" firstAttribute="leading" secondItem="BeH-ln-lrh" secondAttribute="trailing" constant="30" id="L7L-cO-bGy"/>
+                    <constraint firstAttribute="bottom" secondItem="zNt-2L-xwF" secondAttribute="bottom" constant="7.5" id="MHw-WO-x4o"/>
+                    <constraint firstAttribute="trailing" secondItem="zNt-2L-xwF" secondAttribute="trailing" constant="10" id="Rdw-U4-Lhd"/>
+                    <constraint firstItem="Gw9-hU-OCm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ReT-B2-Tej"/>
+                    <constraint firstItem="Gw9-hU-OCm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Ygf-PA-dOB"/>
+                    <constraint firstItem="zNt-2L-xwF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="et3-eS-Exy"/>
+                    <constraint firstItem="BeH-ln-lrh" firstAttribute="top" secondItem="Gw9-hU-OCm" secondAttribute="bottom" constant="5" id="hr6-Ao-xmc"/>
+                    <constraint firstItem="eJU-HO-gRY" firstAttribute="leading" secondItem="Gw9-hU-OCm" secondAttribute="trailing" constant="8" id="pQ3-BE-d3N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="percentageLabel" destination="eJU-HO-gRY" id="fhj-B2-YHz"/>
+                <outlet property="progressBar" destination="BeH-ln-lrh" id="29N-sL-h9k"/>
+                <outlet property="titleLabel" destination="Gw9-hU-OCm" id="bRx-b5-qmt"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="62"/>
+        </tableViewCell>
+    </objects>
+</document>

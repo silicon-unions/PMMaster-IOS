@@ -1,0 +1,42 @@
+//
+//  ExamResultRouter.swift
+//  PMP
+//
+//  Created by Mohammed Ahmed on 7/11/18.
+//  Copyright © 2018 PMP.PMP. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class ExamResultRouter {
+
+    // MARK: Properties
+
+    weak var view: UIViewController?
+
+    // MARK: Static methods
+
+    static func setupModule() -> ExamResultViewController {
+        let viewController = UIStoryboard.loadViewController() as ExamResultViewController
+        let presenter = ExamResultPresenter()
+        let router = ExamResultRouter()
+        let interactor = ExamResultInteractor()
+
+        viewController.presenter =  presenter
+
+        presenter.view = viewController
+        presenter.router = router
+        presenter.interactor = interactor
+
+        router.view = viewController
+
+        interactor.output = presenter
+
+        return viewController
+    }
+}
+
+extension ExamResultRouter: ExamResultWireframe {
+    // TODO: Implement wireframe methods
+}
